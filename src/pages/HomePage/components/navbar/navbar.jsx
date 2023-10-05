@@ -16,9 +16,9 @@ const Navbar=()=>{
                 	<div className="d-flex align-items-center justify-content-center justify-content-md-start">
                         <div className="lng_dropdown me-2">
                             <select name="countries" className="custome_select">
-                                <option value='en' data-image={flage1} data-title="English"><img src={flage3} alt="flagE" />English</option>
-                                <option value='fn' data-image={flage2} data-title="France">France</option>
-                                <option value='us' data-image={flage3} data-title="United States">United States</option>
+                                <option value='en' data-title="English"><img  src={flage1} alt="flag" />EnglishB</option>
+                                <option value='fn' data-title="France"><img  src={flage2} />France</option>
+                                <option value='us' data-title="United States"><img  src={flage3} />United States</option>
                             </select>
                         </div>
                         <div className="me-3">
