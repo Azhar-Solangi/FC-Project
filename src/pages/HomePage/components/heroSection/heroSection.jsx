@@ -88,7 +88,7 @@ const HeroSection = () => {
                     <div className='position-relative '>
 
                         <img classNameName='swiper-slide img ' src={banerC1} alt="img1" />
-                        <div classNameName='cardHadding'>
+                        <div classNameName='cardHadding CardPosition'>
                             <h4 className='cardHadding'>NEW TRANDING</h4>
                             <h1 classNameName='heading'>Sofa Collection</h1>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus <br />blandit massa enim. Nullam id varius nunc id varius nunc.</p>
@@ -99,7 +99,7 @@ const HeroSection = () => {
                 <SwiperSlide classNameName='swiper-slide '>
                     <img classNameName='swiper-slide img img-fluid' src={banerC2} alt="img" />
                     {/* <div classNameName='position-absolute top-50 start-0 translate-middle-y ps-5 ms-5'> */}
-                    <div classNameName='cardHadding'>
+                    <div classNameName='cardHadding  CardPosition'>
                         <h4 className='cardHadding'>Get up to 50% off Today Only!</h4>
                         <h1 classNameName='heading'>Wooden Chair <br /> Collection</h1>
                         <button classNameName='btn2 rounded-5 p-3'><b>SHOPE NOW</b></button>
@@ -107,7 +107,7 @@ const HeroSection = () => {
                 </SwiperSlide>
                 <SwiperSlide classNameName='swiper-slide '><img classNameName='swiper-slide img ' src={banerC3} alt="img" />
                     {/* <div classNameName='position-absolute top-50 start-0 translate-middle-y ps-5 ms-5'> */}
-                    <div classNameName='cardHadding'>
+                    <div classNameName='cardHadding CardPosition'>
                         <h4 className='cardHadding'>Taking your Viewing Experience to Next Level</h4>
                         <h1 classNameName='heading'>Living Room <br /> Collection</h1>
                         <button classNameName='btn2 rounded-5 p-3'><b>SHOPE NOW</b></button>
@@ -529,9 +529,9 @@ const HeroSection = () => {
                                                 <del>$55.25</del>
                                             </div>
                                             <div className="rating_wrap">
-                                                <div className="rating">
+                                                {/* <div className="rating">
                                                     <div className="product_rate" ></div>
-                                                </div>
+                                                </div> */}
                                                 <span className="rating_num">(21)</span>
                                             </div>
                                             <div className="pr_desc">
@@ -564,9 +564,9 @@ const HeroSection = () => {
                                                 <del>$95.00</del>
                                             </div>
                                             <div className="rating_wrap">
-                                                <div className="rating">
+                                                {/* <div className="rating">
                                                     <div className="product_rate" ></div>
-                                                </div>
+                                                </div> */}
                                                 <span className="rating_num">(15)</span>
                                             </div>
                                             <div className="pr_desc">
@@ -599,9 +599,9 @@ const HeroSection = () => {
                                                 <del>$99.00</del>
                                             </div>
                                             <div className="rating_wrap">
-                                                <div className="rating">
+                                                {/* <div className="rating">
                                                     <div className="product_rate" ></div>
-                                                </div>
+                                                </div> */}
                                                 <span className="rating_num">(25)</span>
                                             </div>
                                             <div className="pr_desc">
@@ -634,9 +634,9 @@ const HeroSection = () => {
                                                 <del>$89.00</del>
                                             </div>
                                             <div className="rating_wrap">
-                                                <div className="rating">
+                                                {/* <div className="rating">
                                                     <div className="product_rate" ></div>
-                                                </div>
+                                                </div> */}
                                                 <span className="rating_num">(22)</span>
                                             </div>
                                             <div className="pr_desc">
@@ -669,9 +669,9 @@ const HeroSection = () => {
                                                 <del>$55.25</del>
                                             </div>
                                             <div className="rating_wrap">
-                                                <div className="rating">
+                                                {/* <div className="rating">
                                                     <div className="product_rate" ></div>
-                                                </div>
+                                                </div> */}
                                                 <span className="rating_num">(21)</span>
                                             </div>
                                             <div className="pr_desc">
@@ -704,9 +704,9 @@ const HeroSection = () => {
                                                 <del>$95.00</del>
                                             </div>
                                             <div className="rating_wrap">
-                                                <div className="rating">
+                                                {/* <div className="rating">
                                                     <div className="product_rate" ></div>
-                                                </div>
+                                                </div> */}
                                                 <span className="rating_num">(15)</span>
                                             </div>
                                             <div className="pr_desc">
@@ -734,7 +734,7 @@ const HeroSection = () => {
                                 <h3>instagram</h3>
                                 <span>@shoppingzone</span>
                             </div>
-                            <div className="client_logo carousel_slider owl-carousel owl-theme d-flex" data-dots="false" data-margin="0" data-loop="true" data-autoplay="true" data-responsive='{"0":{"items": "2"}, "480":{"items": "3"}, "767":{"items": "4"}, "991":{"items": "6"}}'>
+                            <div className="client_logo carousel_slider owl-carousel owl-theme container d-flex" data-dots="false" data-margin="0" data-loop="true" data-autoplay="true" data-responsive='{"0":{"items": "2"}, "480":{"items": "3"}, "767":{"items": "4"}, "991":{"items": "6"}}'>
                                 <div className="item">
                                     <div className="instafeed_box">
                                         <a href="#">
@@ -787,7 +787,7 @@ const HeroSection = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-12">
-                            <div className="client_logo carousel_slider owl-carousel owl-theme d-flex" data-dots="false" data-margin="30" data-loop="true" data-autoplay="true" data-responsive='{"0":{"items": "2"}, "480":{"items": "3"}, "767":{"items": "4"}, "991":{"items": "5"}}'>
+                            <div className="client_logo carousel_slider owl-carousel owl-theme container gap-5 d-flex" data-dots="false" data-margin="30" data-loop="true" data-autoplay="true" data-responsive='{"0":{"items": "2"}, "480":{"items": "3"}, "767":{"items": "4"}, "991":{"items": "5"}}'>
                                 <div className="item">
                                     <div className="cl_logo">
                                         <img className="img-fluid" src={logo1} alt="cl_logo" />

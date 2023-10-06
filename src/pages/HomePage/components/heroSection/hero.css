@@ -1,14 +1,14 @@
 /* .CardPosition{
 	
-	margin-top: 1000px !important;
+	padding-bottom: -200 !important;
 	
 } */
-/* .cardHadding{
+.cardHadding{
 	
 	margin-top: -300px;
-	padding-bottom: 200px;
-	border: 2px solid red !important;
-} */
+	/* padding-bottom: 200px;
+	border: 2px solid red !important; */
+}
 
 
 
