@@ -7,7 +7,7 @@ import reportWebVitals from './reportWebVitals';
 // all css links
 // import './assets/css/animate.css'
 // import './assets/css/magnific-popup.css'
-// import './assets/css/responsive.css'
+import './assets/css/responsive.css'
 // import './assets/css/style.css'
 
 

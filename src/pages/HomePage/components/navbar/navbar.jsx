@@ -8,6 +8,7 @@ import flage3 from '../../../../assets/images/us.png'
 import logoD from '../../../../assets/images/logo_dark.png'
 import search from '../../../../assets/images/magnifying.svg';
 import shope from '../../../../assets/images/shopping-solid.svg';
+import { Link, Outlet } from "react-router-dom";
 const Navbar = () => {
     return (
         <>
@@ -30,7 +31,7 @@ const Navbar = () => {
                     <div className="col-md-3 d-flex justify-content-end gap-3">
                         <span>Compare</span>
                         <span>Wishlist</span>
-                        <span>Login</span>
+                       <Link to="/Login"><span>Login</span></Link>
                     </div>
                 </div>
             </div>
@@ -44,13 +45,13 @@ const Navbar = () => {
                     </div>
 
                     <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-                        <li><a href="#" class="nav-link px-2">HOME</a></li>
+                        <li><Link to="/" class="nav-link px-2">HOME</Link></li>
 
                         <li><a href="#" class="nav-link px-2">PAGES</a></li>
                         <li><a href="#" class="nav-link px-2">PRODUCTS</a></li>
-                        <li><a href="#" class="nav-link px-2">BLOG</a></li>
-                        <li><a href="#" class="nav-link px-2">SHOP</a></li>
-                        <li><a href="#" class="nav-link px-2">CONTACT US</a></li>
+                        <li><a href="../../../../assets/pages/ShopeList/ShopList.jsx" class="nav-link px-2">BLOG</a></li>
+                        <li><Link to="/ShopList" class="nav-link px-2">SHOP</Link></li>
+                        <li><Link to="/ContactUs" class="nav-link px-2">CONTACT US</Link></li>
                     </ul>
 
                     <div class="col-md-3 text-end">
@@ -370,6 +371,7 @@ const Navbar = () => {
                     </div>
                 </div>
             </header> */}
+            <Outlet/>
 
 
         </>
