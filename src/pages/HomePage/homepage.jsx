@@ -11,8 +11,8 @@ const HomePage =()=> {
     <HeroSection/>
     <ExclusiveProducts/>
     <TreadingCarosel/>
-    <ShopFooter/>
-    {/* <Footer/> */}
+    {/* <ShopFooter/> */}
+    <Footer/>
     </>
     
 } 
