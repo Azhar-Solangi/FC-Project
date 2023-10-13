@@ -6,68 +6,263 @@ import flage1 from '../../../../assets/images/eng.png'
 import flage2 from '../../../../assets/images/amarican_express.png'
 import flage3 from '../../../../assets/images/us.png'
 import logoD from '../../../../assets/images/logo_dark.png'
-import search from '../../../../assets/images/magnifying.svg';
-import shope from '../../../../assets/images/shopping-solid.svg';
+import compare from '../../../../assets/images/icons/compare.png';
+import wishList from '../../../../assets/images/icons/wishlist.png';
+import login from '../../../../assets/images/icons/login.png';
+import phone from '../../../../assets/images/icons/navphone.png';
+import search from '../../../../assets/images/icons/seechO.svg';
+import shope from '../../../../assets/images/icons/shopO.svg';
 import { Link, Outlet } from "react-router-dom";
 const Navbar = () => {
     return (
         <>
             <div className="container pt-3">
                 <div className="row">
-                    <div className="col-md-3">
-                        <select name="" id="">
+                    <div className="col-md-3 gap-3">
+                        <select className="border-0" name="" id="">
                             <option value="">English</option>
                             <option value="">France</option>
                             <option value="">United States</option>
                         </select>
-                        <select name="" id="">
+                        <select className="border-0" name="" id="">
                             <option value="">USD</option>
                             <option value="">EUR</option>
                             <option value="">GBR</option>
                         </select>
-                        <span className="phonNbr">123-456-7890</span>
+                        <span className="phonNbr"> <img src={phone} className="img-fluid" alt="" /> 123-456-7890</span>
                     </div>
                     <div className="col-md-6"></div>
                     <div className="col-md-3 d-flex justify-content-end gap-3">
-                        <span>Compare</span>
-                        <span>Wishlist</span>
-                       <Link to="/Login"><span>Login</span></Link>
+                        <span><img src={compare} className="img-fluid" alt="" /> Compare</span>
+                        <span><img src={wishList} className="img-fluid" alt="" /> Wishlist</span>
+                       <Link to="/Login" className="nav-link"><span><img src={login} className="img-fluid" alt="" /> Login</span></Link>
                     </div>
                 </div>
             </div>
             <hr />
-            <div class="container">
-                <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-1 mb-4">
+            {/* testing */}
+            <nav class="navbar navbar-expand-lg  ">
+                <div class="container d-flex justify-content-end gap-5 ">
+                  <div>  <img src={logoD} alt="image" /></div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                       <b> <ul class="navbar-nav me-auto gap-3 mt-2 mx-3 mb-2 mb-lg-0 ">
+                            <li class="nav-item">
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        HOME
+                                    </a>
+                                    <ul class="dropdown-menu mt-2 rounded-0">
+                                        <li><Link to="/" class="dropdown-item" href="#">Fashion 1</Link></li>                                                                  
+                                        <li><a class="dropdown-item" href="#">Fashion 2</a></li>
+                                        <li><a class="dropdown-item" href="#">Furniture 1</a></li>
+                                        <li><a class="dropdown-item" href="#">Furniture 2</a></li>
+                                        <li><a class="dropdown-item" href="#">Electronics 1</a></li>
+                                        <li><a class="dropdown-item" href="#">Electronics 2</a></li>
+
+                                    </ul>
+                                </li>
+
+
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    PAGES
+                                </a>
+                                <ul class="dropdown-menu mt-2 rounded-0">
+                                    <li><Link to="/AboutUs" class="dropdown-item" href="#">About Us</Link></li>
+                                    <li><Link class="dropdown-item" to="/ContactUs">Contact Us</Link></li>
+                                    <li><a class="dropdown-item" href="#">Faq</a></li>
+                                    <li><a class="dropdown-item" href="#">404 Error Page</a></li>
+                                    <li><Link class="dropdown-item" to="/Login">Login</Link></li>
+                                    <li><Link class="dropdown-item" to="/Register">Register</Link></li>
+                                    <li><a class="dropdown-item" href="#">Terms And Conditions</a></li>
+
+                                </ul>
+                            </li>                          
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    PRODUCTS
+                                </a>
+                                <ul class="dropdown-menu mt-2 rounded-0">
+                                    <li><Link to="/HeroSection" class="dropdown-item" href="#">About Us</Link></li>
+                                    <li><a class="dropdown-item" href="#">Contact Us</a></li>
+                                    <li><a class="dropdown-item" href="#">Faq</a></li>
+                                    <li><a class="dropdown-item" href="#">404 Error Page</a></li>
+                                    <li><a class="dropdown-item" href="#">Login</a></li>
+                                    <li><a class="dropdown-item" href="#">Register</a></li>
+                                    <li><a class="dropdown-item" href="#">Terms And Conditions</a></li>
+
+                                </ul>
+                            </li>                          
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    BLOG
+                                </a>
+                                <ul class="dropdown-menu mt-2 rounded-0">
+                                    <li><Link to="/HeroSection" class="dropdown-item" href="#">About Us</Link></li>
+                                    <li><a class="dropdown-item" href="#">Contact Us</a></li>
+                                    <li><a class="dropdown-item" href="#">Faq</a></li>
+                                    <li><a class="dropdown-item" href="#">404 Error Page</a></li>
+                                    <li><a class="dropdown-item" href="#">Login</a></li>
+                                    <li><a class="dropdown-item" href="#">Register</a></li>
+                                    <li><a class="dropdown-item" href="#">Terms And Conditions</a></li>
+
+                                </ul>
+                            </li>                          
+                            <li class="nav-item dropdown">
+                                <Link class="nav-link dropdown-toggle" to="/ShopList" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    SHOP
+                                </Link>
+                                <ul class="dropdown-menu mt-2 rounded-0">
+                                    <li><Link  class="dropdown-item" to="/ShopList">Shop List</Link></li>
+                                    <li><a class="dropdown-item" href="#">Contact Us</a></li>
+                                    <li><a class="dropdown-item" href="#">Faq</a></li>
+                                    <li><a class="dropdown-item" href="#">404 Error Page</a></li>
+                                    <li><a class="dropdown-item" href="#">Login</a></li>
+                                    <li><a class="dropdown-item" href="#">Register</a></li>
+                                    <li><a class="dropdown-item" href="#">Terms And Conditions</a></li>
+
+                                </ul>
+                            </li>
+                            <li className="nav-item dropdown nav-link"><Link class="dropdown-item" to="/ContactUs"><b>CONTACT US</b></Link></li>                          
+                        </ul>
+                        </b>
+                        
+                        <div className="float-end border-0 py-2  form-control me-2 d-flex justify-content-end  ">
+
+                        <Link to="/login">
+                        <img src={search} alt="search" width={30} />
+                        </Link>
+                        <Link to="/" >
+                        <span className="position-relative"> <img src={shope} width={30} alt="" />  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                            2
+                            <span class="visually-hidden">unread messages</span>
+                        </span></span>
+                        </Link>
+                        </div>
+
+                    </div>
+                </div>
+            </nav>
+            {/* testing */}
+            {/* <div class="container">
+                <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-1 mb-4 position">
                     <div class="col-md-3 mb-2 mb-md-0">
                         <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
                             <img src={logoD} alt="" />
                         </a>
                     </div>
+                    <div className="navbar navbar-expand-lg col-md-6 ">
+                    <b> <ol class="navbar-nav me-auto gap-3 mt-2 mx-3 mb-2 mb-lg-0 border d-flex row">
+                            <li class="nav-item">
 
-                    <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-                        <li><Link to="/" class="nav-link px-2">HOME</Link></li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        HOME
+                                    </a>
+                                    <ul class="dropdown-menu mt-2 rounded-0">
+                                        <li><Link to="/" class="dropdown-item" href="#">Fashion 1</Link></li>                                                                  
+                                        <li><a class="dropdown-item" href="#">Fashion 2</a></li>
+                                        <li><a class="dropdown-item" href="#">Furniture 1</a></li>
+                                        <li><a class="dropdown-item" href="#">Furniture 2</a></li>
+                                        <li><a class="dropdown-item" href="#">Electronics 1</a></li>
+                                        <li><a class="dropdown-item" href="#">Electronics 2</a></li>
 
+                                    </ul>
+                                </li>
+
+
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    PAGES
+                                </a>
+                                <ul class="dropdown-menu mt-2 rounded-0">
+                                    <li><Link to="/HeroSection" class="dropdown-item" href="#">About Us</Link></li>
+                                    <li><a class="dropdown-item" href="#">Contact Us</a></li>
+                                    <li><a class="dropdown-item" href="#">Faq</a></li>
+                                    <li><a class="dropdown-item" href="#">404 Error Page</a></li>
+                                    <li><a class="dropdown-item" href="#">Login</a></li>
+                                    <li><a class="dropdown-item" href="#">Register</a></li>
+                                    <li><a class="dropdown-item" href="#">Terms And Conditions</a></li>
+
+                                </ul>
+                            </li>                          
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    PRODUCTS
+                                </a>
+                                <ul class="dropdown-menu mt-2 rounded-0">
+                                    <li><Link to="/HeroSection" class="dropdown-item" href="#">About Us</Link></li>
+                                    <li><a class="dropdown-item" href="#">Contact Us</a></li>
+                                    <li><a class="dropdown-item" href="#">Faq</a></li>
+                                    <li><a class="dropdown-item" href="#">404 Error Page</a></li>
+                                    <li><a class="dropdown-item" href="#">Login</a></li>
+                                    <li><a class="dropdown-item" href="#">Register</a></li>
+                                    <li><a class="dropdown-item" href="#">Terms And Conditions</a></li>
+
+                                </ul>
+                            </li>                          
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    BLOG
+                                </a>
+                                <ul class="dropdown-menu mt-2 rounded-0">
+                                    <li><Link to="/HeroSection" class="dropdown-item" href="#">About Us</Link></li>
+                                    <li><a class="dropdown-item" href="#">Contact Us</a></li>
+                                    <li><a class="dropdown-item" href="#">Faq</a></li>
+                                    <li><a class="dropdown-item" href="#">404 Error Page</a></li>
+                                    <li><a class="dropdown-item" href="#">Login</a></li>
+                                    <li><a class="dropdown-item" href="#">Register</a></li>
+                                    <li><a class="dropdown-item" href="#">Terms And Conditions</a></li>
+
+                                </ul>
+                            </li>                          
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    SHOP
+                                </a>
+                                <ul class="dropdown-menu mt-2 rounded-0">
+                                    <li><Link to="/HeroSection" class="dropdown-item" href="#">About Us</Link></li>
+                                    <li><a class="dropdown-item" href="#">Contact Us</a></li>
+                                    <li><a class="dropdown-item" href="#">Faq</a></li>
+                                    <li><a class="dropdown-item" href="#">404 Error Page</a></li>
+                                    <li><a class="dropdown-item" href="#">Login</a></li>
+                                    <li><a class="dropdown-item" href="#">Register</a></li>
+                                    <li><a class="dropdown-item" href="#">Terms And Conditions</a></li>
+
+                                </ul>
+                            </li>
+                            <li className="nav-item dropdown nav-link"><a class="dropdown-item" href="#"><b>CONTACT US</b></a></li>                          
+                        </ol>
+                        </b>
+                    </div>
+
+                    <ul class="nav gap-4 col-12 col-md-auto mb-2 justify-content-center mb-md-0  text-dark">
+                        <li>
+                            <Link to="/" class="nav-link px-2">HOME</Link></li>
                         <li><a href="#" class="nav-link px-2">PAGES</a></li>
                         <li><a href="#" class="nav-link px-2">PRODUCTS</a></li>
                         <li><a href="../../../../assets/pages/ShopeList/ShopList.jsx" class="nav-link px-2">BLOG</a></li>
-                        <li><Link to="/ShopList" class="nav-link px-2">SHOP</Link></li>
+                        <li>
+                            <Link to="/ShopList" class="nav-link px-2">SHOP</Link></li>
                         <li><Link to="/ContactUs" class="nav-link px-2">CONTACT US</Link></li>
                     </ul>
 
                     <div class="col-md-3 text-end">
-                        <img src={search} alt="" width={30} />
+                        <img src={search} alt="search" width={30} />
                         <span className="position-relative"> <img src={shope} width={30} alt="" />  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                                2
-                                <span class="visually-hidden">unread messages</span>
-                            </span></span>
-                        {/* <button type="button" class="btn btn-primary position-relative">
-                            Inbox
-                          
-                        </button> */}
+                            2
+                            <span class="visually-hidden">unread messages</span>
+                        </span></span>
                     </div>
                 </header>
-            </div>
-{/* 
+            </div> */}
+            {/* 
             <header className="header_wrap fixed-top header_with_topbar">
                 <div className="top-header">
                     <div className="container">
@@ -371,7 +566,7 @@ const Navbar = () => {
                     </div>
                 </div>
             </header> */}
-            <Outlet/>
+            <Outlet />
 
 
         </>

@@ -4,49 +4,52 @@ import logo2 from '../../../assets/images/discover.png'
 import logo3 from '../../../assets/images/master_card.png'
 import logo4 from '../../../assets/images/paypal.png'
 import logo5 from '../../../assets/images/amarican_express.png'
+// Icons
+import locationIcon from '../../../assets/images/icons/addressIcon.svg'
+import msgIcon from '../../../assets/images/icons/emaiIcon.svg'
+import phoneIcon from '../../../assets/images/icons/phoneIcon.svg'
 
 
 const Footer =()=>{
     return(
         <>
-        <div className='bg-black text-white'>
- <div class="container">
-  <footer class="py-5">
-    <div class="row">
-      <div class="col-6 col-md-2 mb-3 ">
-        <h5>Section</h5>
-        <ul class="nav flex-column">
-          <li class="nav-item mb-2 "><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
-        </ul>
-      </div>
+        {/* new */}
+        <div className='bg-dark text-white'>
+        <div class="container">
+          <footer class="py-5">
+            <div class="row">
+            {/* <div class="col-md-4  mb-3 text-white">
+                <h4 className='text-white'><b>Contact Info</b></h4>
+                <ul class="nav flex-column gap-2 pt-3">
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white"><img src={locationIcon} alt="" /> 123 Street, Old Trafford, New South London , UK</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white"><img src={msgIcon} alt="" /> info@sitename.com</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white"><img src={phoneIcon} alt="" /> + 457 789 789 65</a></li>
+                </ul>
+              </div> */}
+{/* 
+              <div class="col-6 col-md-2 mb-3 text-white gap-2 ">
+                <h4 className='text-white'><b>Useful Links</b></h4>
+                <ul class="nav flex-column gap-2 pt-3">
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">About Us</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">FAQ</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Location</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Affiliates</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Contact</a></li>
+                </ul>
+              </div> */}
+{/* 
+              <div class="col-6 col-md-2 mb-3 text-white">
+                <h4 className='text-white'><b>My Account</b></h4>
+                <ul class="nav flex-column gap-2 pt-3">
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">My Account</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Discount</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Returns</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Orders History</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Order Tracking</a></li>
+                </ul>
+              </div> */}
 
-      <div class="col-6 col-md-2 mb-3">
-        <h5>Section</h5>
-        <ul class="nav flex-column">
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
-        </ul>
-      </div>
-
-      <div class="col-6 col-md-2 mb-3">
-        <h5>Section</h5>
-        <ul class="nav flex-column">
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
-        </ul>
-      </div>
-
-      <div class="col-md-5 offset-md-1 mb-3">
+              {/* <div class="col-md-4 offset-md-1 mb-3 text-white">
         <form>
           <h5>Subscribe to our newsletter</h5>
           <p>Monthly digest of what's new and exciting from us.</p>
@@ -56,20 +59,32 @@ const Footer =()=>{
             <button class="btn btn-primary" type="button">Subscribe</button>
           </div>
         </form>
-      </div>
-    </div>
+      </div> */}
 
-    <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
-      <p>&copy; 2023 Company, Inc. All rights reserved.</p>
-      <ul class="list-unstyled d-flex">
-        {/* <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
-        <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
-        <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li> */}
-      </ul>
-    </div>
-  </footer>
-</div>
-</div>
+            </div>
+
+
+          </footer>
+        </div>
+        {/* <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top text-white">
+          <div className='container'>
+            <div className='d-flex row'>
+              <div className='col-md-9'><p>&copy; 2020 All Rights Reserved by Bestwebcreator</p></div>
+              <div className='col-md-3'>
+                <ul class="list-unstyled d-flex">
+                  <li class="ps-2"><a class="link-body-emphasis" href="#"><img src={logo1} alt="" /></a></li>
+                  <li class="ps-2"><a class="link-body-emphasis" href="#"><img src={logo2} alt="" /></a></li>
+                  <li class="ps-2"><a class="link-body-emphasis" href="#"><img src={logo3} alt="" /></a></li>
+                  <li class="ps-2"><a class="link-body-emphasis" href="#"><img src={logo4} alt="" /></a></li>
+                  <li class="ps-2"><a class="link-body-emphasis" href="#"><img src={logo5} alt="" /></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div> */}
+      </div>
+        {/* old */}
+
         </>
     )
 };

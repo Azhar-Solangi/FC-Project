@@ -39,10 +39,10 @@ import logo6 from '../../../../assets/images/cl_logo6.png'
 import baner1 from '../../../../assets/images/furniture_banner1.jpg'
 import baner2 from '../../../../assets/images/furniture_banner2.jpg'
 // icons
-import icon1 from '../../../../assets/images/fn.png'
-import icon2 from '../../../../assets/images/fn.png'
-import icon3 from '../../../../assets/images/fn.png'
-import icon4 from '../../../../assets/images/fn.png'
+import icon1 from '../../../../assets/images/icons/deleveryTruck.png'
+import icon2 from '../../../../assets/images/icons/moneyRetern.png'
+import icon3 from '../../../../assets/images/icons/24service.png'
+import icon4 from '../../../../assets/images/icons/paymentSecurity.png'
 
 
 
@@ -88,7 +88,7 @@ const HeroSection = () => {
                     <div className='position-relative '>
 
                         <img classNameName='swiper-slide img ' src={banerC1} alt="img1" />
-                        <div classNameName='cardHadding CardPosition'>
+                        <div classNameName='container  cardHadding CardPosition'>
                             <h4 className='cardHadding'>NEW TRANDING</h4>
                             <h1 classNameName='heading'>Sofa Collection</h1>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus <br />blandit massa enim. Nullam id varius nunc id varius nunc.</p>
@@ -99,7 +99,7 @@ const HeroSection = () => {
                 <SwiperSlide classNameName='swiper-slide '>
                     <img classNameName='swiper-slide img img-fluid' src={banerC2} alt="img" />
                     {/* <div classNameName='position-absolute top-50 start-0 translate-middle-y ps-5 ms-5'> */}
-                    <div classNameName='cardHadding  CardPosition'>
+                    <div classNameName='container  cardHadding  CardPosition'>
                         <h4 className='cardHadding'>Get up to 50% off Today Only!</h4>
                         <h1 classNameName='heading'>Wooden Chair <br /> Collection</h1>
                         <button classNameName='btn2 rounded-5 p-3'><b>SHOPE NOW</b></button>
@@ -107,7 +107,7 @@ const HeroSection = () => {
                 </SwiperSlide>
                 <SwiperSlide classNameName='swiper-slide '><img classNameName='swiper-slide img ' src={banerC3} alt="img" />
                     {/* <div classNameName='position-absolute top-50 start-0 translate-middle-y ps-5 ms-5'> */}
-                    <div classNameName='cardHadding CardPosition'>
+                    <div classNameName='container  cardHadding CardPosition'>
                         <h4 className='cardHadding'>Taking your Viewing Experience to Next Level</h4>
                         <h1 classNameName='heading'>Living Room <br /> Collection</h1>
                         <button classNameName='btn2 rounded-5 p-3'><b>SHOPE NOW</b></button>
@@ -115,11 +115,41 @@ const HeroSection = () => {
                 </SwiperSlide>
             </Swiper>
 
+            <div className='container'>
+                <div className='row my-5 mx-1'>
+                    <div className='col-md-3 d-flex border p-4'>
+                      <div>  <img src={icon1} alt="one" /></div>
+                  <div className='ps-3'><h6><b>Free Delivery</b></h6>
+                    Worldwide
+                    </div>
+                    </div>
+                    <div className='col-md-3 d-flex border p-4'>
+                   <div> <img src={icon2} alt="two" /> </div>
+                   <div className='ps-3'><h6><b> Money Returns</b></h6>
+                    30 Days money return
+                    </div>
+                    </div>
+                    <div className='col-md-3 d-flex border p-4'>
+                       <div> <img src={icon3} alt="three" /></div>
+                       <div className='ps-3'><h6><b> 27/4 Online Support</b></h6>
+                        Customer Support
+                        </div>
+                    </div>
+                    <div className='col-md-3 d-flex border p-4'>
+                      <div>  <img src={icon4} alt="four" /></div>
+                       <div className='ps-3'>
+                        <h6><b> Payment Security</b></h6>
+                        Safe Payment 
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             {/* hard code */}
             <div className="main_content">
 
 
-                <div className="section small_pb">
+                {/* <div className="section small_pb">
                     <div className="container">
                         <div className="row g-0">
                             <div className="col-lg-3 col-sm-6">
@@ -168,8 +198,8 @@ const HeroSection = () => {
                         </div>
                     </div>
                 </div>
-            </div>
-
+            </div> */}
+{/* 
             <div className="section small_pt pb_20">
                 <div className="container">
                     <div className="row justify-content-center">
@@ -202,9 +232,7 @@ const HeroSection = () => {
                                         <del>$55.25</del>
                                     </div>
                                     <div className="rating_wrap">
-                                        {/* <div className="rating">
-                                            <div className="product_rate" ></div>
-                                        </div> */}
+                                
                                         <span className="rating_num">(21)</span>
                                     </div>
                                     <div className="pr_desc">
@@ -237,9 +265,7 @@ const HeroSection = () => {
                                         <del>$95.00</del>
                                     </div>
                                     <div className="rating_wrap">
-                                        {/* <div className="rating">
-                                            <div className="product_rate" ></div>
-                                        </div> */}
+                                      
                                         <span className="rating_num">(15)</span>
                                     </div>
                                     <div className="pr_desc">
@@ -272,9 +298,7 @@ const HeroSection = () => {
                                         <del>$99.00</del>
                                     </div>
                                     <div className="rating_wrap">
-                                        {/* <div className="rating">
-                                            <div className="product_rate" ></div>
-                                        </div> */}
+                                    
                                         <span className="rating_num">(25)</span>
                                     </div>
                                     <div className="pr_desc">
@@ -307,9 +331,7 @@ const HeroSection = () => {
                                         <del>$89.00</del>
                                     </div>
                                     <div className="rating_wrap">
-                                        {/* <div className="rating">
-                                            <div className="product_rate" ></div>
-                                        </div> */}
+                                   
                                         <span className="rating_num">(22)</span>
                                     </div>
                                     <div className="pr_desc">
@@ -342,9 +364,7 @@ const HeroSection = () => {
                                         <del>$55.25</del>
                                     </div>
                                     <div className="rating_wrap">
-                                        {/* <div className="rating">
-                                            <div className="product_rate" ></div>
-                                        </div> */}
+                                  
                                         <span className="rating_num">(21)</span>
                                     </div>
                                     <div className="pr_desc">
@@ -377,9 +397,7 @@ const HeroSection = () => {
                                         <del>$95.00</del>
                                     </div>
                                     <div className="rating_wrap">
-                                        {/* <div className="rating">
-                                            <div className="product_rate" ></div>
-                                        </div> */}
+                                     
                                         <span className="rating_num">(15)</span>
                                     </div>
                                     <div className="pr_desc">
@@ -412,9 +430,7 @@ const HeroSection = () => {
                                         <del>$99.00</del>
                                     </div>
                                     <div className="rating_wrap">
-                                        {/* <div className="rating">
-                                            <div className="product_rate" ></div>
-                                        </div> */}
+                                     
                                         <span className="rating_num">(25)</span>
                                     </div>
                                     <div className="pr_desc">
@@ -450,9 +466,7 @@ const HeroSection = () => {
                                         </div>
                                     </div>
                                     <div className="rating_wrap">
-                                        {/* <div className="rating">
-                                            <div className="product_rate" ></div>
-                                        </div> */}
+                                    
                                         <span className="rating_num">(22)</span>
                                     </div>
                                     <div className="pr_desc">
@@ -466,9 +480,9 @@ const HeroSection = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
 
-            <div className="section pb_20 small_pt">
+            {/* <div className="section pb_20 small_pt">
                 <div className="container">
                     <div className="row">
                         <div className="col-md-5">
@@ -493,8 +507,8 @@ const HeroSection = () => {
                         </div>
                     </div>
                 </div>
-            </div>
-
+            </div> */}
+{/* 
             <div className="section small_pt pb_20">
                 <div className="container">
                     <div className="row justify-content-center">
@@ -529,9 +543,7 @@ const HeroSection = () => {
                                                 <del>$55.25</del>
                                             </div>
                                             <div className="rating_wrap">
-                                                {/* <div className="rating">
-                                                    <div className="product_rate" ></div>
-                                                </div> */}
+                                           
                                                 <span className="rating_num">(21)</span>
                                             </div>
                                             <div className="pr_desc">
@@ -564,9 +576,7 @@ const HeroSection = () => {
                                                 <del>$95.00</del>
                                             </div>
                                             <div className="rating_wrap">
-                                                {/* <div className="rating">
-                                                    <div className="product_rate" ></div>
-                                                </div> */}
+                                         
                                                 <span className="rating_num">(15)</span>
                                             </div>
                                             <div className="pr_desc">
@@ -599,9 +609,7 @@ const HeroSection = () => {
                                                 <del>$99.00</del>
                                             </div>
                                             <div className="rating_wrap">
-                                                {/* <div className="rating">
-                                                    <div className="product_rate" ></div>
-                                                </div> */}
+                                         
                                                 <span className="rating_num">(25)</span>
                                             </div>
                                             <div className="pr_desc">
@@ -634,9 +642,7 @@ const HeroSection = () => {
                                                 <del>$89.00</del>
                                             </div>
                                             <div className="rating_wrap">
-                                                {/* <div className="rating">
-                                                    <div className="product_rate" ></div>
-                                                </div> */}
+                                            
                                                 <span className="rating_num">(22)</span>
                                             </div>
                                             <div className="pr_desc">
@@ -669,9 +675,7 @@ const HeroSection = () => {
                                                 <del>$55.25</del>
                                             </div>
                                             <div className="rating_wrap">
-                                                {/* <div className="rating">
-                                                    <div className="product_rate" ></div>
-                                                </div> */}
+                                               
                                                 <span className="rating_num">(21)</span>
                                             </div>
                                             <div className="pr_desc">
@@ -704,9 +708,7 @@ const HeroSection = () => {
                                                 <del>$95.00</del>
                                             </div>
                                             <div className="rating_wrap">
-                                                {/* <div className="rating">
-                                                    <div className="product_rate" ></div>
-                                                </div> */}
+                                         
                                                 <span className="rating_num">(15)</span>
                                             </div>
                                             <div className="pr_desc">
@@ -722,9 +724,9 @@ const HeroSection = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
 
-            <div className="section small_pt small_pb">
+            {/* <div className="section small_pt small_pb">
                 <div className="container-fluid p-0">
                     <div className="row g-0">
                         <div className="col-12">
@@ -781,8 +783,8 @@ const HeroSection = () => {
                         </div>
                     </div>
                 </div>
-            </div>
-
+            </div> */}
+{/* 
             <div className="section small_pt">
                 <div className="container">
                     <div className="row">
@@ -822,7 +824,7 @@ const HeroSection = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
 
 
         </div >

@@ -6,6 +6,7 @@ import Register from './pages/Register/Register';
 import ShopList from './pages/ShopList/ShopList';
 import ContactUs from './pages/ContactUs/ContactUs';
 import Login from './pages/Login/Login';
+import AboutUs from './pages/AboutUs/aboutus';
 
 
 function App() {
@@ -16,7 +17,7 @@ function App() {
       children:[
         {
           path:"/",
-          element:<HomePage/>
+          element:<HomePage />
         },
         {
           path:"/ShopList",
@@ -25,6 +26,10 @@ function App() {
         {
           path:"/ContactUs",
           element:<ContactUs/>
+        },
+        {
+          path:"/AboutUs",
+          element:<AboutUs/>
         },
         {
           path:"/Login",

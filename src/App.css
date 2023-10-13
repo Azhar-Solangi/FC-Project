@@ -1,0 +1,47 @@
+.h11{
+    color: red !important;
+}
+li :hover{
+    color:red !important;
+}
+a, link{
+  text-decoration: none !important;
+  
+}
+/* .fontcolor{
+  background-image:linear-gradient(#d43a3a,#3a70d4) !important;
+  font-size: 72px; 
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+} */
+
+/* swiiper */
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    /* background: #fff; */
+  
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    /* width: 100%;
+    height: 100%; */
+    object-fit: cover;
+  }
+  
+  .swiper {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
