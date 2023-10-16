@@ -1,5 +1,6 @@
 import React from "react";
 import ShopFooter from "../ShopList/components/footer/footer";
+import "./about.css"
 
 
 // images
@@ -160,28 +161,28 @@ const AboutUs = () => {
                             modules={[Pagination, Navigation, Autoplay]}
                             className="mySwiper"
                         >
-                            <SwiperSlide>
+                            <SwiperSlide className="swiperslide ">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam amet animi blanditiis <br /> consequatur debitis dicta distinctio, enim error eum iste libero modi nam natus <br /> perferendis possimus quasi sint sit tempora voluptatem.</p>
                                 <div className="d-flex justify-content-center py-4 text-center">
                                     <img src={user1} width={50} className="" alt="pic" />
                                     <div className="px-3 text-start"><h6>Lissa Castro</h6><span className="text-danger">Designer</span></div>
                                 </div>
                             </SwiperSlide>
-                            <SwiperSlide>
+                            <SwiperSlide className="swiperslide ">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam amet animi blanditiis <br /> consequatur debitis dicta distinctio, enim error eum iste libero modi nam natus <br /> perferendis possimus quasi sint sit tempora voluptatem.</p>
                                 <div className="d-flex justify-content-center py-4 text-center">
                                     <img src={user2} width={50} className="" alt="pic" />
                                     <div className="px-3 text-start"><h6>Aldin Smith</h6><span className="text-danger">Designer</span></div>
                                 </div>
                             </SwiperSlide>
-                            <SwiperSlide>
+                            <SwiperSlide className="swiperslide ">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam amet animi blanditiis <br /> consequatur debitis dicta distinctio, enim error eum iste libero modi nam natus <br /> perferendis possimus quasi sint sit tempora voluptatem.</p>
                                 <div className="d-flex justify-content-center py-4 text-center">
                                     <img src={user3} width={50} className="" alt="pic" />
                                     <div className="px-3 text-start"><h6>Daisy Lana</h6><span className="text-danger">Designer</span></div>
                                 </div>
                             </SwiperSlide>
-                            <SwiperSlide>
+                            <SwiperSlide className="swiperslide ">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam amet animi blanditiis <br /> consequatur debitis dicta distinctio, enim error eum iste libero modi nam natus <br /> perferendis possimus quasi sint sit tempora voluptatem.</p>
                                 <div className="d-flex justify-content-center py-4 text-center">
                                     <img src={user4} width={50} className="" alt="pic" />

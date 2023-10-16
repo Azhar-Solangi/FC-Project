@@ -82,35 +82,37 @@ const HeroSection = () => {
                     clickable: true,
                 }}
                 modules={[Autoplay, EffectFade, Pagination, Navigation]}
-                classNameName="mySwiper"
+                className="mySwiper"
             >
-                <SwiperSlide classNameName='swiper-slide'>
-                    <div className='position-relative '>
-
-                        <img classNameName='swiper-slide img ' src={banerC1} alt="img1" />
-                        <div classNameName='container  cardHadding CardPosition'>
-                            <h4 className='cardHadding'>NEW TRANDING</h4>
-                            <h1 classNameName='heading'>Sofa Collection</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus <br />blandit massa enim. Nullam id varius nunc id varius nunc.</p>
-                            <button classNameName='btn1 rounded-5 p-3'><b>SHOPE NOW</b></button>
+                <SwiperSlide className='position-relative'>
+                <img className='swiper-slide img ' src={banerC1} alt="img1" />
+                    <div className=' container'>                   
+                        <div className='position-absolute top-50 start-10 translate-middle-y'>
+                            <h4 className=''>NEW TRANDING</h4>
+                            <h1 className=''>Sofa Collection</h1>
+                            <p className='fs-6'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus </p> <p className='fs-6'>blandit massa enim. Nullam id varius nunc id varius nunc.</p>
+                            <button type='button' className='btn btn-outline-dark rounded-pill px-5 py-3'><b>SHOPE NOW</b></button>
                         </div>
                     </div>
                 </SwiperSlide>
-                <SwiperSlide classNameName='swiper-slide '>
-                    <img classNameName='swiper-slide img img-fluid' src={banerC2} alt="img" />
-                    {/* <div classNameName='position-absolute top-50 start-0 translate-middle-y ps-5 ms-5'> */}
-                    <div classNameName='container  cardHadding  CardPosition'>
-                        <h4 className='cardHadding'>Get up to 50% off Today Only!</h4>
-                        <h1 classNameName='heading'>Wooden Chair <br /> Collection</h1>
-                        <button classNameName='btn2 rounded-5 p-3'><b>SHOPE NOW</b></button>
+                <SwiperSlide className='position-relative'>
+                    <img className='swiper-slide img img-fluid' src={banerC2} alt="img" />
+                    <div className='container'>
+                    <div className='position-absolute top-50 start-10 translate-middle-y'>
+                        <h4 className=''>Get up to 50% off Today Only!</h4>
+                        <h1 className='heading'>Wooden Chair <br /> Collection</h1>
+                        <button type='button' className='btn btn-outline-danger rounded-pill px-5 py-3'><b>SHOPE NOW</b></button>
+                    </div>
                     </div>
                 </SwiperSlide>
-                <SwiperSlide classNameName='swiper-slide '><img classNameName='swiper-slide img ' src={banerC3} alt="img" />
-                    {/* <div classNameName='position-absolute top-50 start-0 translate-middle-y ps-5 ms-5'> */}
-                    <div classNameName='container  cardHadding CardPosition'>
-                        <h4 className='cardHadding'>Taking your Viewing Experience to Next Level</h4>
-                        <h1 classNameName='heading'>Living Room <br /> Collection</h1>
-                        <button classNameName='btn2 rounded-5 p-3'><b>SHOPE NOW</b></button>
+                <SwiperSlide className='position-relative'>
+                    <img className='swiper-slide img ' src={banerC3} alt="img" />
+                    <div className='container'>
+                    <div className='position-absolute top-50 start-10 translate-middle-y'>
+                        <h4 className=''>Taking your Viewing Experience to Next Level</h4>
+                        <h1 className='heading'>Living Room <br /> Collection</h1>
+                        <button type='button' className='btn btn-outline-danger rounded-pill px-5 py-3'><b>SHOPE NOW</b></button>
+                    </div>
                     </div>
                 </SwiperSlide>
             </Swiper>

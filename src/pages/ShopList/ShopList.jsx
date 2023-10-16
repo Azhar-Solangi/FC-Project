@@ -176,7 +176,11 @@ const ShopList = () => {
                                     <div className="justify-content-end"><img src={star} className="imh-fluid" alt="" />{item.rating}</div>
                                 </div>
                                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc id varius nunc</p>
-                                <span><img src={check} className="imh-fluid" alt="" /></span>
+                                <span>
+                                <input type="radio" className="form-check-input bg-black p-3" name="color" id="color1"/>
+                                <input type="radio" className="form-check-input bg-danger p-3 ms-2" name="color" id="color1"/>
+                                <input type="radio" className="form-check-input bg-secondary p-3 ms-2" name="color" id="color1"/>
+                                </span>
                                 <div className="pt-2"><a href=""><span><img src={addcart} className="imh-fluid" alt="" /></span></a><a href=""><span><img src={iconsall} className="imh-fluid" alt="" /></span></a></div>
                             </div>
                         </div>

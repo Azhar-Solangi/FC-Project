@@ -115,7 +115,7 @@ const ExclusiveProducts = () => {
                 </div>
                 <div className="row my-5">
                     <div className="col-md-5 position-relative">
-                        <img src={baner1} className="img-fluid" alt="" />
+                        <img  src={baner1} className="img-fluid form-control p-0 border-0 rounded-0" alt="" />
                         <div className="p-5 position-absolute top-0 start-0">
                             <h5>Super Sale</h5>
                             <h1 className="fw-bold">New Collection</h1>
@@ -123,7 +123,7 @@ const ExclusiveProducts = () => {
                         </div>
                     </div>
                     <div className="col-md-7 position-relative">
-                        <img src={baner2} className="img-fluid" alt="" />
+                        <img  src={baner2} className="img-fluid form-control p-0 border-0 rounded-0" alt="" />
                         <div className="p-5 position-absolute top-50 start-0 translate-middle-y">
                         <h1 className="fw-bold">New Season</h1>
                             <h3>Sale 40% Off</h3>

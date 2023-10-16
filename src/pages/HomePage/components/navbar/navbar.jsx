@@ -43,7 +43,7 @@ const Navbar = () => {
             {/* testing */}
             <nav class="navbar navbar-expand-lg  ">
                 <div class="container d-flex justify-content-end gap-5 ">
-                  <div>  <img src={logoD} alt="image" /></div>
+                  <div> <Link to='/' ><img src={logoD} alt="image" /></Link></div>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -56,12 +56,15 @@ const Navbar = () => {
                                         HOME
                                     </a>
                                     <ul class="dropdown-menu mt-2 rounded-0">
+                                        <div className="dropdown-content">
                                         <li><Link to="/" class="dropdown-item" href="#">Fashion 1</Link></li>                                                                  
                                         <li><a class="dropdown-item" href="#">Fashion 2</a></li>
                                         <li><a class="dropdown-item" href="#">Furniture 1</a></li>
                                         <li><a class="dropdown-item" href="#">Furniture 2</a></li>
                                         <li><a class="dropdown-item" href="#">Electronics 1</a></li>
                                         <li><a class="dropdown-item" href="#">Electronics 2</a></li>
+                                        </div>
+                                     
 
                                     </ul>
                                 </li>
