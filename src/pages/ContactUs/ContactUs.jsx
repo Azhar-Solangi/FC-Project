@@ -52,18 +52,18 @@ const ContactUs = () => {
                         <div>
                             <h1><b>Get In Touch</b></h1>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc id varius nunc.</p>
-                        <form action="">
+                        <form   action="https://formspree.io/f/mpzgkbjn" method="POST">
                             <div className="row">
                                 <div className="col-md-6">    
-                            <input  className="mb-3 p-2 px-4 rounded-2 form-control" type="text" placeholder="Enter Name *" required />                        
-                            <input  className="mb-3 p-2 px-4 rounded-2 form-control btn-lg" type="text" placeholder="Enter Phone No.*" required /> 
+                            <input name="name"  className="mb-3 p-2 px-4 rounded-2 form-control" type="text" placeholder="Enter Name *" required />                        
+                            <input name="phone-number"  className="mb-3 p-2 px-4 rounded-2 form-control btn-lg" type="text" placeholder="Enter Phone No.*" required /> 
                             </div>
                             <div className="col-md-6">
-                            <input  className="mb-3 p-2 px-4 rounded-2 form-control" type="email" placeholder="Enter Email *" required />
-                            <input  className="mb-3 p-2 px-4 rounded-2 form-control" type="text" placeholder="Enter Subject *" required />
+                            <input name="email"  className="mb-3 p-2 px-4 rounded-2 form-control" type="email" placeholder="Enter Email *" required />
+                            <input name="subject"  className="mb-3 p-2 px-4 rounded-2 form-control" type="text" placeholder="Enter Subject *" required />
                             </div>
                             </div>
-                            <textarea className="form-control" required placeholder="Message *" name="" id="" rows="5"></textarea> <br />
+                            <textarea  className="form-control" required placeholder="Message *" name="message" id="" rows="5"></textarea> <br />
                             <button className="mt-2 py-2 px-5 rounded-2 bg-danger border-0 " type="submit">Send Message</button>
                         </form>
                         </div>

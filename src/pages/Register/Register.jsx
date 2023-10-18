@@ -21,9 +21,9 @@ const Register=()=>{
                 </div>
             </div>
             {/* form */}
-            <div className="row">
-                <div className="col-md-4"></div>
-                <div className="col-md-4 container">
+            <div className="row px-0 mx-0">
+                <div className="col-md-4 px-0 mx-0"></div>
+                <div className="col-md-4 container px-0 mx-0">
                     <form className="container my-5 mb-5 shadow py-5" action="">
                         <h2 className=""><b>Create An Account</b></h2>
                         <input className="col-md-12 p-2 rounded-2 my-2 form-control" required type="text" placeholder="Enter Your Name" />
@@ -48,7 +48,7 @@ const Register=()=>{
                         
                     </form>
                 </div>
-                <div className="col-md-4"></div>
+                <div className="col-md-4 px-0 mx-0"></div>
             </div>
             <ShopFooter/>
         </>

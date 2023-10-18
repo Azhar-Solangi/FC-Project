@@ -43,10 +43,10 @@ const TreadingCarosel =()=>{
                 spaceBetween={1}
                 centeredSlides={true}
                 slidesPerView={4}
-                autoplay={{
-                    delay: 3500,
-                    disableOnInteraction: false,
-                }}
+                // autoplay={{
+                //     delay: 3500,
+                //     disableOnInteraction: false,
+                // }}
                 loop={true}
                 // effect={'fade'}
                 // pagination={{

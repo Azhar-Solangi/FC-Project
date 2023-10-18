@@ -21,13 +21,17 @@ const ShopFooter = () => {
       {/* Contact Red Row */}
       <div className="bg-danger text-white">
         <div className="container  py-5">
-          <div className="d-flex my-3 ">
+          <div className="d-flex my-3 row">
+            <div className='col-md-6'>
             <div className="me-auto">
               <h2 className="text-white"><b>Subscribe Our Newsletter</b></h2>
             </div>
-            <div className="justify-content-end d-flex">
-              <input width={500} className="p-3 px-5" type="text" placeholder="Enter Email Address" />
+            </div>
+            <div className='col-md-6'>
+            <div className="d-flex">
+              <input  className="p-3 px-5 footerSearch" type="text" placeholder="Enter Email Address" />
               <button className="text-white bg-dark px-5">Subscribe</button>
+            </div>
             </div>
           </div>
         </div>
@@ -37,7 +41,7 @@ const ShopFooter = () => {
         <div class="container">
           <footer class="py-5">
             <div class="row">
-              <div class="col-6 col-md-3 mb-3 text-white">
+              <div class=" col-md-3 mb-3 text-white">
                 <h4 className='text-white'><img src={foterlogo} alt="" /></h4>
                 <ul class="nav flex-column text-white gap-2 pt-3">
                   <li class="nav-item mb-2 "><a href="#" class="nav-link p-0 text-white">If you are going to use of Lorem Ipsum need to be sure there isn't hidden of text</a></li>
@@ -45,7 +49,7 @@ const ShopFooter = () => {
                 </ul>
               </div>
 
-              <div class="col-6 col-md-2 mb-3 text-white gap-2 ">
+              <div class=" col-md-2 mb-3 text-white gap-2 ">
                 <h4 className='text-white'><b>Useful Links</b></h4>
                 <ul class="nav flex-column gap-2 pt-3">
                   <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">About Us</a></li>
@@ -55,7 +59,7 @@ const ShopFooter = () => {
                   <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Contact</a></li>
                 </ul>
               </div>
-              <div class="col-6 col-md-2 mb-3 text-white">
+              <div class=" col-md-2 mb-3 text-white">
                 <h4 className='text-white'><b>Category</b></h4>
                 <ul class="nav flex-column gap-2 pt-3">
                   <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Men</a></li>
@@ -66,7 +70,7 @@ const ShopFooter = () => {
                 </ul>
               </div>
 
-              <div class="col-6 col-md-2 mb-3 text-white">
+              <div class=" col-md-2 mb-3 text-white">
                 <h4 className='text-white'><b>My Account</b></h4>
                 <ul class="nav flex-column gap-2 pt-3">
                   <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">My Account</a></li>
