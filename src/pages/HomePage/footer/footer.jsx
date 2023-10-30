@@ -16,15 +16,15 @@ import social4 from '../../../assets/images/icons/youtube.png'
 import social5 from '../../../assets/images/icons/instagram.png'
 
 
-const Footer =()=>{
-    return(
-        <>
-        {/* new */}
-        <div className='bg-dark text-white'>
+const Footer = () => {
+  return (
+    <>
+      {/* new */}
+      <div className='bg-dark text-white'>
         <div class="container">
           <footer class="pt-5">
             <div class="row">
-            <div class="col-md-2  mb-3 text-white">
+              <div class="col-md-3  mb-3 text-white">
                 <h4 className='text-white'><b>Contact Info</b></h4>
                 <ul class="nav flex-column gap-2 pt-3">
                   <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white"><img src={locationIcon} alt="" /> 123 Street, Old Trafford, New South London , UK</a></li>
@@ -39,7 +39,6 @@ const Footer =()=>{
                   </li>
                 </ul>
               </div>
-
               <div class=" col-md-2 mb-3 text-white gap-2 ">
                 <h4 className='text-white'><b>Useful Links</b></h4>
                 <ul class="nav flex-column gap-2 pt-3">
@@ -50,7 +49,6 @@ const Footer =()=>{
                   <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Contact</a></li>
                 </ul>
               </div>
-
               <div class=" col-md-2 mb-3 text-white">
                 <h4 className='text-white'><b>My Account</b></h4>
                 <ul class="nav flex-column gap-2 pt-3">
@@ -61,22 +59,17 @@ const Footer =()=>{
                   <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Order Tracking</a></li>
                 </ul>
               </div>
-
-              <div class="col-md-5 offset-md-1 mb-3 text-white">
-        <form>
-          <h5>Subscribe our newsletter</h5>
-          <p>If you want to get an email from us every time we have a new special offer, then sign up here!</p>
-          <div class="d-flex flex-column flex-sm-row w-100 gap-2">
-            <label for="newsletter1" class="visually-hidden">Email address</label>
-            <input id="newsletter1" type="text" class="form-control rounded-5 py-3" placeholder="Email address"/>
-            
-          </div>
-        </form>
-      </div>
-
+              <div class="col-md-5  mb-3 text-white">
+                <form>
+                  <h5>Subscribe our newsletter</h5>
+                  <p>If you want to get an email from us every time we have a new special offer, then sign up here!</p>
+                  <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                    <label for="newsletter1" class="visually-hidden">Email address</label>
+                    <input id="newsletter1" type="text" class="form-control rounded-5 py-3" placeholder="Email address" />
+                  </div>
+                </form>
+              </div>
             </div>
-
-
           </footer>
         </div>
         <div class="d-flex flex-column flex-sm-row justify-content-between py-4 mt-4 border-top text-white">
@@ -96,9 +89,7 @@ const Footer =()=>{
           </div>
         </div>
       </div>
-        {/* old */}
-
-        </>
-    )
+    </>
+  )
 };
 export default Footer;

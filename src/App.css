@@ -8,11 +8,17 @@ a, link{
   text-decoration: none !important;
   
 }
-/* .fontcolor{
-  background-image:linear-gradient(#d43a3a,#3a70d4) !important;
-  font-size: 72px; 
-  background: -webkit-linear-gradient(#eee, #333);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-} */
 
+.grencol{
+  color: green !important;
+}
+.EroorColor{
+  color:  red !important;
+}
+
+@media (max-width: 768) {
+  .topDiv{
+    display: none !important;
+  }
+  
+}

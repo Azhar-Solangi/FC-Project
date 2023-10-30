@@ -5,15 +5,13 @@ import HeroSection from "./components/heroSection/heroSection";
 import Navbar from "./components/navbar/navbar";
 import Footer from "./footer/footer";
 
-const HomePage =()=> {
-   return <>
-    {/* <Navbar/> */}
-    <HeroSection/>
-    <ExclusiveProducts/>
-    <TreadingCarosel/>
-    {/* <ShopFooter/> */}
-    <Footer/>
+const HomePage = () => {
+    return <>
+        <HeroSection />
+        <ExclusiveProducts />
+        <TreadingCarosel />
+        <Footer />
     </>
-    
-} 
+
+}
 export default HomePage;

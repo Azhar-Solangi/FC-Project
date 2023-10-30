@@ -1,3 +1,10 @@
 .phonNbr{
     font-size:small;
 }
+@media screen and  (max-width: 768px) {
+    .topDiv{
+      display: none !important;
+      display: block;
+    }
+    
+  }

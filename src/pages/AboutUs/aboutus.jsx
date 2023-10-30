@@ -162,7 +162,7 @@ const AboutUs = () => {
                             className="mySwiper"
                         >
                             <SwiperSlide className="swiperslide ">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam amet animi blanditiis <br /> consequatur debitis dicta distinctio, enim error eum iste libero modi nam natus <br /> perferendis possimus quasi sint sit tempora voluptatem.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam amet animi blanditiis <br /> consequatur debitis dicta distinctio, enim error eum iste libero modi nam natus <br /> perferendis possimus quasi sint sit tempora voluptatem.</p>
                                 <div className="d-flex justify-content-center py-4 text-center">
                                     <img src={user1} width={50} className="" alt="pic" />
                                     <div className="px-3 text-start"><h6>Lissa Castro</h6><span className="text-danger">Designer</span></div>
@@ -176,14 +176,14 @@ const AboutUs = () => {
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide className="swiperslide ">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam amet animi blanditiis <br /> consequatur debitis dicta distinctio, enim error eum iste libero modi nam natus <br /> perferendis possimus quasi sint sit tempora voluptatem.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam amet animi blanditiis <br /> consequatur debitis dicta distinctio, enim error eum iste libero modi nam natus <br /> perferendis possimus quasi sint sit tempora voluptatem.</p>
                                 <div className="d-flex justify-content-center py-4 text-center">
                                     <img src={user3} width={50} className="" alt="pic" />
                                     <div className="px-3 text-start"><h6>Daisy Lana</h6><span className="text-danger">Designer</span></div>
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide className="swiperslide ">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam amet animi blanditiis <br /> consequatur debitis dicta distinctio, enim error eum iste libero modi nam natus <br /> perferendis possimus quasi sint sit tempora voluptatem.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam amet animi blanditiis <br /> consequatur debitis dicta distinctio, enim error eum iste libero modi nam natus <br /> perferendis possimus quasi sint sit tempora voluptatem.</p>
                                 <div className="d-flex justify-content-center py-4 text-center">
                                     <img src={user4} width={50} className="" alt="pic" />
                                     <div className="px-3 text-start"><h6>John Becker</h6><span className="text-danger">Designer</span></div>
@@ -198,17 +198,17 @@ const AboutUs = () => {
             <div className="container my-5 py-5">
                 <div className="row">
                     <div className="col-md-4 text-center border-end">
-                        <img src={truckIcon} className="img-fluid"  alt="pic" />
+                        <img src={truckIcon} className="img-fluid" alt="pic" />
                         <h5><b>Free Delivery</b></h5>
                         <p>If you are going to use of Lorem, you <br /> need to be sure there anything</p>
                     </div>
                     <div className="col-md-4 text-center border-end">
-                        <img src={moneyIcon} className="img-fluid"  alt="pic" />
+                        <img src={moneyIcon} className="img-fluid" alt="pic" />
                         <h5><b>30 Day Return</b></h5>
                         <p>If you are going to use of Lorem, you <br /> need to be sure there anything</p>
                     </div>
                     <div className="col-md-4 text-center">
-                        <img src={servicetIcon} className="img-fluid"  alt="pic" />
+                        <img src={servicetIcon} className="img-fluid" alt="pic" />
                         <h5><b>27/4 Support</b></h5>
                         <p>If you are going to use of Lorem, you <br /> need to be sure there anything</p>
                     </div>

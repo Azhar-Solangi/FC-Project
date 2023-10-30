@@ -7,6 +7,7 @@ import ShopList from './pages/ShopList/ShopList';
 import ContactUs from './pages/ContactUs/ContactUs';
 import Login from './pages/Login/Login';
 import AboutUs from './pages/AboutUs/aboutus';
+import { ProductDetail } from './pages/productDetail/productDetail';
 
 
 function App() {
@@ -38,6 +39,10 @@ function App() {
         {
           path:"/Register",
           element:<Register/>
+        },
+        {
+          path:"/ProductDetail",
+          element:<ProductDetail/>
         },
       ]
 

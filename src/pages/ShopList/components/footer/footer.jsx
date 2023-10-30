@@ -23,15 +23,15 @@ const ShopFooter = () => {
         <div className="container  py-5">
           <div className="d-flex my-3 row">
             <div className='col-md-6'>
-            <div className="me-auto">
-              <h2 className="text-white"><b>Subscribe Our Newsletter</b></h2>
-            </div>
+              <div className="me-auto">
+                <h2 className="text-white"><b>Subscribe Our Newsletter</b></h2>
+              </div>
             </div>
             <div className='col-md-6'>
-            <div className="d-flex">
-              <input  className="p-3 px-5 footerSearch" type="text" placeholder="Enter Email Address" />
-              <button className="text-white bg-dark px-5">Subscribe</button>
-            </div>
+              <div className="d-flex">
+                <input className="p-3 px-4 footerSearch" type="text" placeholder="Enter Email Address" />
+                <button className="text-white bg-dark px-4">Subscribe</button>
+              </div>
             </div>
           </div>
         </div>

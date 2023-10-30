@@ -19,13 +19,22 @@ import pic9 from '../../assets/images/product_img9.jpg'
 import pic10 from '../../assets/images/product_img10.jpg'
 import pic11 from '../../assets/images/product_img11.jpg'
 import pic12 from '../../assets/images/product_img12.jpg'
+import { useDispatch, useSelector } from "react-redux";
+import { addItem } from "../functins/functions";
 
 
 
 const ShopList = () => {
-    const card=[
+
+    const dispatch = useDispatch();
+    const addCartHandeler = (date) => {
+        // console.log(date);
+        dispatch(addItem(date));
+    }
+    const card = [
         {
-            pic: pic1 ,
+            id: 1,
+            pic: pic1,
             title: "Blue Dress For Woman",
             PRate: "$45.00",
             ORate: "$55.25",
@@ -33,7 +42,8 @@ const ShopList = () => {
             rating: "(21)",
         },
         {
-            pic: pic2 ,
+            id: 2,
+            pic: pic2,
             title: "Lether Gray Tuxedo",
             PRate: "$55.00",
             ORate: "$95.00",
@@ -41,7 +51,8 @@ const ShopList = () => {
             rating: "(15)",
         },
         {
-            pic: pic3 ,
+            id: 3,
+            pic: pic3,
             title: "Woman Full Sliv Dress",
             PRate: "$68.00",
             ORate: "$99.25",
@@ -49,7 +60,8 @@ const ShopList = () => {
             rating: "(25)",
         },
         {
-            pic: pic4 ,
+            id: 4,
+            pic: pic4,
             title: "Light Blue Shirt",
             PRate: "$69.00",
             ORate: "$89.00",
@@ -57,7 +69,8 @@ const ShopList = () => {
             rating: "(22)",
         },
         {
-            pic: pic5 ,
+            id: 5,
+            pic: pic5,
             title: "Blue Dress For Woman",
             PRate: "$45.00",
             ORate: "$55.25",
@@ -65,7 +78,8 @@ const ShopList = () => {
             rating: "(21)",
         },
         {
-            pic: pic6 ,
+            id: 6,
+            pic: pic6,
             title: "Blue Casual Check Shirt",
             PRate: "$55.00",
             ORate: "$95.00",
@@ -73,7 +87,8 @@ const ShopList = () => {
             rating: "(15)",
         },
         {
-            pic: pic7 ,
+            id: 7,
+            pic: pic7,
             title: "White Black Line Dress",
             PRate: "$68.00",
             ORate: "$99.00",
@@ -81,7 +96,8 @@ const ShopList = () => {
             rating: "(25)",
         },
         {
-            pic: pic8 ,
+            id: 8,
+            pic: pic8,
             title: "Men Blue Jins Shirt",
             PRate: "$69.00",
             ORate: "$89.00",
@@ -89,7 +105,8 @@ const ShopList = () => {
             rating: "(22)",
         },
         {
-            pic: pic9 ,
+            id: 9,
+            pic: pic9,
             title: "T-Shirt Form Girls",
             PRate: "$45.00",
             ORate: "$55.25",
@@ -97,7 +114,8 @@ const ShopList = () => {
             rating: "(21)",
         },
         {
-            pic: pic10 ,
+            id: 10,
+            pic: pic10,
             title: "Red & Black Check Shirt",
             PRate: "$55.00",
             ORate: "$95.00",
@@ -105,6 +123,7 @@ const ShopList = () => {
             rating: "(15)",
         },
         {
+            id: 11,
             pic: pic11,
             title: "Black Dress For Woman",
             PRate: "$68.00",
@@ -113,6 +132,7 @@ const ShopList = () => {
             rating: "(25)",
         },
         {
+            id: 12,
             pic: pic12,
             title: "Black T-Shirt For Woman",
             PRate: "$68.00",
@@ -161,32 +181,33 @@ const ShopList = () => {
                     </div>
                 </div>
                 {/*12 Cards Mape */}
-               {card.map((item)=>{
-                return( 
-               <div class="card mb-3">
-                    <div class="row g-0">
-                        <div class="col-md-3">
-                            <img height={300} src={item.pic} class="rounded-start img-fluid" alt="..." />
-                        </div>
-                        <div class="col-md-9">
-                            <div class="card-body">
-                                <h5 class="card-title">{item.title}</h5>
-                                <div className="d-flex ">
-                                    <div className="me-auto"><b className="text-danger">{item.PRate}</b><del className="ps-2">{item.ORate}</del><span className="ps-2 text-success">{item.OffPercent}</span></div>
-                                    <div className="justify-content-end"><img src={star} className="imh-fluid" alt="" />{item.rating}</div>
+                {card.map((item) => {
+                    return (
+                        <div class="card mb-3">
+                            <div class="row g-0">
+                                <div class="col-md-3">
+                                    <img height={300} src={item.pic} class="rounded-start img-fluid" alt="..." />
                                 </div>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc id varius nunc</p>
-                                <span>
-                                <input type="radio" className="form-check-input bg-black p-3" name="color" id="color1"/>
-                                <input type="radio" className="form-check-input bg-danger p-3 ms-2" name="color" id="color1"/>
-                                <input type="radio" className="form-check-input bg-secondary p-3 ms-2" name="color" id="color1"/>
-                                </span>
-                                <div className="pt-2"><a href=""><span><img src={addcart} className="imh-fluid" alt="" /></span></a><a href=""><span><img src={iconsall} className="imh-fluid" alt="" /></span></a></div>
+                                <div class="col-md-9">
+                                    <div class="card-body">
+                                        <h5 class="card-title">{item.title}</h5>
+                                        <div className="d-flex ">
+                                            <div className="me-auto"><b className="text-danger">{item.PRate}</b><del className="ps-2">{item.ORate}</del><span className="ps-2 text-success">{item.OffPercent}</span></div>
+                                            <div className="justify-content-end"><img src={star} className="imh-fluid" alt="" />{item.rating}</div>
+                                        </div>
+                                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc id varius nunc</p>
+                                        <span>
+                                            <input type="radio" className="form-check-input bg-black p-3" name="color" id="color1" />
+                                            <input type="radio" className="form-check-input bg-danger p-3 ms-2" name="color" id="color1" />
+                                            <input type="radio" className="form-check-input bg-secondary p-3 ms-2" name="color" id="color1" />
+                                        </span>
+                                        <div className="pt-2"><button onClick={() => { addCartHandeler(item) }} className="border-0 bg-white"><img src={addcart} className="imh-fluid" alt="" /></button><a href=""><span><img src={iconsall} className="imh-fluid" alt="" /></span></a></div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                )})} 
+                    )
+                })}
             </div>
             <div className="container">
                 <div className="d-flex justify-content-center my-5 gap-2 ">
