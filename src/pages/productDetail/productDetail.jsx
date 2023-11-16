@@ -3,6 +3,8 @@ import React from "react";
 import star from '../../assets/images/stars7.svg'
 import addcart from '../../assets/images/addCart.svg'
 import iconsall from '../../assets/images/iconsall.svg'
+import thamnail from '../../assets/images/thumnail.svg'
+import list from '../../assets/images/list.svg'
 import { useDispatch, useSelector } from "react-redux";
 import ShopFooter from "../ShopList/components/footer/footer";
 import { addItem, decreaseQuantity, increaseQuantity, removeItem } from "../functins/functions";
@@ -43,6 +45,29 @@ export const ProductDetail = () => {
                         </div>
                     </div>
 
+                </div>
+            </div>
+            <div className="container">
+            <div className="d-flex my-4">
+                    <div className="me-auto ">
+                        <select className="p-3" name="" id="">
+                            <option value="">Default sorting</option>t
+                            <option value="">Sort by popularity</option>t
+                            <option value="">Sort by newness</option>t
+                            <option value="">Sort by price:low to high</option>t
+                            <option value="">Sort by price:high to low</option>t
+                        </select>
+                    </div>
+                    <div className="justify-content-end gap-2 d-flex">
+                        <div> <img height={53} src={thamnail} alt="" /></div>
+                        <div><img height={53} src={list} alt="" /></div>
+                        <div>  <select className="p-3" name="" id="">
+                            <option value="">Showing</option>
+                            <option value="">9</option>
+                            <option value="">12</option>
+                            <option value="">18</option>
+                        </select> </div>
+                    </div>
                 </div>
             </div>
             {items.map((data) => {

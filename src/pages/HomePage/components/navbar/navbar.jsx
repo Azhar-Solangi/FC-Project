@@ -73,14 +73,14 @@ const Navbar = () => {
                             <li class="nav-item">
 
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <Link class="nav-link dropdown-toggle" to="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         HOME
-                                    </a>
+                                    </Link>
                                     <ul class="dropdown-menu mt-2 rounded-0">
                                         <div className="dropdown-content">
                                             <li><Link to="/" class="dropdown-item" href="#">Fashion 1</Link></li>
                                             <li><a class="dropdown-item" href="#">Fashion 2</a></li>
-                                            <li><a class="dropdown-item" href="#">Furniture 1</a></li>
+                                            <li><Link class="dropdown-item" to="/">Furniture 1</Link></li>
                                             <li><a class="dropdown-item" href="#">Furniture 2</a></li>
                                             <li><a class="dropdown-item" href="#">Electronics 1</a></li>
                                             <li><a class="dropdown-item" href="#">Electronics 2</a></li>
@@ -106,7 +106,7 @@ const Navbar = () => {
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     PRODUCTS
                                 </a>
-                                <ul class="dropdown-menu mt-2 rounded-0">
+                                {/* <ul class="dropdown-menu mt-2 rounded-0">
                                     <li><Link to="/HeroSection" class="dropdown-item" href="#">About Us</Link></li>
                                     <li><a class="dropdown-item" href="#">Contact Us</a></li>
                                     <li><a class="dropdown-item" href="#">Faq</a></li>
@@ -114,13 +114,13 @@ const Navbar = () => {
                                     <li><a class="dropdown-item" href="#">Login</a></li>
                                     <li><a class="dropdown-item" href="#">Register</a></li>
                                     <li><a class="dropdown-item" href="#">Terms And Conditions</a></li>
-                                </ul>
+                                </ul> */}
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     BLOG
                                 </a>
-                                <ul class="dropdown-menu mt-2 rounded-0">
+                                {/* <ul class="dropdown-menu mt-2 rounded-0">
                                     <li><Link to="/HeroSection" class="dropdown-item" href="#">About Us</Link></li>
                                     <li><a class="dropdown-item" href="#">Contact Us</a></li>
                                     <li><a class="dropdown-item" href="#">Faq</a></li>
@@ -128,20 +128,21 @@ const Navbar = () => {
                                     <li><a class="dropdown-item" href="#">Login</a></li>
                                     <li><a class="dropdown-item" href="#">Register</a></li>
                                     <li><a class="dropdown-item" href="#">Terms And Conditions</a></li>
-                                </ul>
+                                </ul> */}
                             </li>
                             <li class="nav-item dropdown">
                                 <Link class="nav-link dropdown-toggle" to="/ShopList" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     SHOP
                                 </Link>
                                 <ul class="dropdown-menu mt-2 rounded-0">
-                                    <li><Link class="dropdown-item" to="/ShopList">Shop List</Link></li>
-                                    <li><a class="dropdown-item" href="#">Contact Us</a></li>
+                                    <li><Link class="dropdown-item" to="/ProductDetail">Shop List 1</Link></li>
+                                    <li><Link class="dropdown-item" to="/ShopList">Shop List 2</Link></li>
+                                    {/* <li><a class="dropdown-item" href="#">Contact Us</a></li>
                                     <li><a class="dropdown-item" href="#">Faq</a></li>
                                     <li><a class="dropdown-item" href="#">404 Error Page</a></li>
                                     <li><a class="dropdown-item" href="#">Login</a></li>
                                     <li><a class="dropdown-item" href="#">Register</a></li>
-                                    <li><a class="dropdown-item" href="#">Terms And Conditions</a></li>
+                                    <li><a class="dropdown-item" href="#">Terms And Conditions</a></li> */}
                                 </ul>
                             </li>
                             <li className="nav-item dropdown nav-link"><Link class="dropdown-item" to="/ContactUs"><b>CONTACT US</b></Link></li>
@@ -173,8 +174,10 @@ const Navbar = () => {
                                                     <button className="rounded-2 p-2 bg-primary" onClick={() => increaseIQuantityHandler(product)}>+</button>
                                                     <span className="p-2"><b className="text-danger">{product.PRate}</b> <del>{product.ORate}</del> </span>
                                                 </div>
-                                                <button className="rounded-2 p-2 px-4 bg-black text-white" onClick={() => removItemHandler(product)}>Remove</button>
-                                                <button className="rounded-2 p-2 px-4 bg-danger text-white">Shop Now</button>
+                                                <span className="d-flex">
+                                                <button className="rounded-2 p-2 px-2 bg-black text-white" onClick={() => removItemHandler(product)}>Remove</button>
+                                                <button className="rounded-2 p-2 px-4 ms-1 bg-danger text-white">Shop Now</button>
+                                                </span>
                                             </div>
                                         )
                                     })}

@@ -20,6 +20,7 @@ const ExclusiveProducts = () => {
 
     const dispatch = useDispatch();
     const addCartHandeler = (date) => {
+ 
         // console.log(date);
         dispatch(addItem(date));
     }
@@ -109,7 +110,6 @@ const ExclusiveProducts = () => {
         <>
             <div className='container mt-5'>
                 <div className='text-center'>
-
                     <h1 className='pt-3'>Exclusive Products</h1>
                     <img src={redrow} className="img-fluid" width={100} alt="" />
                 </div>
@@ -124,6 +124,7 @@ const ExclusiveProducts = () => {
                                         <div><h5>{data.title}</h5></div>
                                         <div><span className="text-danger fw-bold">{data.PRate}</span> <del>{data.ORate}</del></div>
                                         <div><img src={data.star} class="img-fluid" alt="" /> {data.Paragraph} </div>
+                                        <button className="p-2 my-1 bg-danger border-0 rounded-1 text-white" onClick={() => { addCartHandeler(data)}}><b>ADD TO CART</b></button>
                                     </div>
                                 </div>
                             </>

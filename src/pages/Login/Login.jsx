@@ -7,7 +7,7 @@ const Login = () => {
 
   const [userEmail, setUserEmail] = useState('');
   const [showEmailError, setShowEmailError] = useState(false);
-  const [msgEmail, setMsgEmail] = useState('Enter Your Password ❌');
+  const [msgEmail, setMsgEmail] = useState('Enter Your Email ❌');
 
   const [userPassword, setUserPassword] = useState('');
   const [showPasswordError, setShowPasswordError] = useState(false);
@@ -63,7 +63,7 @@ const Login = () => {
             <input value={userEmail} onChange={Emailhandler} className="col-md-12 p-2 rounded-2 my-2 form-control" type="text" placeholder="Your Email" />
             {showEmailError && <p className={` ${msgEmail === "Looks Good! ✔" ? "grencol" : "EroorColor"}`}>{msgEmail}</p>}
             <input value={userPassword} onChange={Passwordhandler} className="col-md-12 p-2 rounded-2 my-2 form-control" type="password" placeholder="Password" /> <br />
-            {showEmailError && <p className={` ${msgEmail === "Looks Good! ✔" ? "grencol" : "EroorColor"}`}>{msgEmail}</p>}
+            {showPasswordError && <p className={` ${msgPasswoed === "Looks Good! ✔" ? "grencol" : "EroorColor"}`}>{msgPasswoed}</p>}
             <div className="row  py-2">
               <div className="col-md-4"><input type="checkbox" placeholder="" /><span className="ps-2">Remember me</span></div>
               <div className="col-md-4"></div>
